@@ -1,0 +1,18 @@
+<html>
+    <title>JavaScript Demo</title>
+    <script>
+        function onClick(){
+            var selected = document.getElementById("selectbox");
+            alert("selected option is " + selected.options[selected.selectedIndex].value);  //selecting value from Drop-down values
+        }
+    </script>
+    <body>
+        <select id="selectbox">
+            <option value="First Option">First Option</option>
+            <option value="Second">Second Option</option>
+            <option value="Final Option">Third Option</option>
+        </select>
+        <br><br>
+        <button id="button" onclick="onClick()">Click Me</button>
+    </body>
+</html>

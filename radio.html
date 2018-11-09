@@ -1,0 +1,28 @@
+<html>
+    <title>JavaScript Demo</title>
+    <script>
+        function onClick(){
+            var a = document.getElementById("radio1");
+            var b = document.getElementById("radio2");
+            if(a.checked==true && b.checked==true){         //checking the status of radio button
+                alert("Selected value is : " +a.value+ " and " + b.value);
+            }
+            if(a.checked==true){
+                alert("Selected value is : "+ a.value);
+            }
+            else if(b.checked==true){
+                alert("Selected value is : "+ b.value);
+            }
+            else{
+                alert("No value is selected");
+            }
+        }
+    </script>
+    <body>
+        <input type="radio" id="radio1" value="First">First Group
+        <br>
+        <input type="radio" id="radio2" value="Second Group">Second Group
+        <br>
+        <button id="button" onclick="onClick()">Click Me</button>
+    </body>
+</html>

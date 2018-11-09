@@ -1,0 +1,39 @@
+<html>
+    <title>JavaScript Demo</title>
+    <script>
+        function onClick(){
+            var firstnumber = parseInt(document.getElementById("firstnumber").value);
+            var secondnumber = parseInt(document.getElementById("secondnumber").value);
+            var result = firstnumber + secondnumber;
+            document.getElementById("result").value = result;
+        }
+    </script>
+    <style>
+        body{
+            background-color: darkolivegreen;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <div>
+        <form>
+            <div><b>first Number : </b>
+                <input type="number" id="firstnumber" placeholder="Enter Your First Number">
+            </div>
+            <br>
+            <br>
+            <div><b>second Number : </b>
+                <input type="number" id="secondnumber" placeholder="Enter Your Second Number">
+            </div>
+            <br>
+            <br>
+            <div><b>Result : </b>
+                <input id="result" placeholder="Sum of Two Number">
+            </div>
+            <br>
+            <br>
+            <button id="button" onclick="onClick()">Result</button>
+        </form>
+        </div>
+    </body>
+</html>
